@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Clash Royale Card Shuffle</title>
+	
+	
+	<script>
+	
+	
+	var card =  ['ArchersCard.png', 'ArrowsCard.png', 'BabyDragonCard.png', 'BalloonCard.png'
+			   ,'BanditCard.png', 'BarbarianBarrelCard.png', 'BarbarianHutCard.png', 'BarbariansCard.png'
+			   ,'bats.png', 'BattleRamCard.png', 'BomberCard.png', 'BombTowerCard.png', 'BowlerCard.png'
+			   ,'CannonCard.png', 'CannonCartCard.png', 'clone.png', 'DarkPrinceCard.png', 'DartGoblinCard.png'
+			   ,'ElectroWizardCard.png', 'EliteBarbariansCard.png', 'ElixirCollectorCard.png', 'ExecutionerCard.png'
+			   ,'FireballCard.png', 'FireSpiritsCard.png', 'Flugmaschine.png', 'FreezeCard.png', 'FurnaceCard.png', 'GiantCard.png'
+			   ,'GiantSkeletonCard.png', 'GiantSnowballCard.png', 'GoblinBarrelCard.png', 'GoblinGangCard.png', 'GoblinHutCard.png'
+			   ,'GoblinsCard.png', 'GolemCard.png', 'GraveyardCard.png', 'GuardsCard.png', 'HealCard.png', 'HogRiderCard.png', 'HunterCard.png'
+			   ,'IceGolemCard.png', 'IceSpiritCard.png', 'IceWizardCard.png', 'InfernoDragonCard.png', 'InfernoTowerCard.png'
+			   ,'knight.png', 'LavaHoundCard.png', 'LightningCard.png', 'LumberjackCard.png', 'MagicArcherCard.png', 'MegaKnightCard.png'
+			   ,'MegaMinionCard.png', 'MinerCard.png', 'MinionHordeCard.png', 'Minions.png', 'MiniPEKKACard.png', 'Mirror.png', 'MortarCard.png'
+			   ,'MusketeerCard.png', 'NightWitchCard.png', 'PEKKACard.png', 'PoisonCard.png', 'PrinceCard.png', 'PrincessCard.png', 'RageCard.png'
+			   ,'RascalsCard.png', 'RocketCard.png', 'RoyalGhostCard.png', 'RoyalGiantCard.png', 'RoyalHogs.png', 'SkeletonArmyCard.png'
+			   ,'SkeletonBarrelCard.png', 'SkeletonsCard.png', 'SparkyCard.png', 'SpearGoblinsCard.png', 'TeslaCard.png', 'TheLogCard.png', 'ThreeMusketeersCard.png'
+			   ,'TombstoneCard.png', 'TornadoCard.png', 'ValkyrieCard.png', 'WitchCard.png', 'WizardCard.png', 'X-BowCard.png', 'ZapCard.png', 'ZappiesCard.png'];
+
+	function shuffle()
+	{
+		//alert(" suffle !");
+		var randomCard = new Array();
+		
+		for(i=0; i< card.length; i++){
+			randomCard[i] = card[Math.floor(Math.random() * card.length)];
+			
+				
+			for(j=0; j< i; j++)
+				{
+					
+					if(randomCard[i] == randomCard[j])
+					{
+						i--;
+					}
+				}
+			//alert(randomCard[i]);
+			
+				document.getElementById(0).src = randomCard[0];
+				document.getElementById(1).src = randomCard[1];
+				document.getElementById(2).src = randomCard[2];
+				document.getElementById(3).src = randomCard[3];
+				document.getElementById(4).src = randomCard[4];
+				document.getElementById(5).src = randomCard[5];
+				document.getElementById(6).src = randomCard[6];
+				document.getElementById(7).src = randomCard[7];
+			
+		}
+			
+	
+		
+		
+	}
+		
+	</script>
+
+</head>
+<body>
+	<h1 align="center">Clash Royale Card Shuffle</h1><p>
+		<div align="center">
+			<table width=1300 style="table-layout: fixed" border=1px;>
+				<tr>
+					<th id="t1"><img id="0" width="277" height="330" src="deck1.png" ></th>
+					<th id="t2"><img id="1" width="277" height="330" src="deck2.png"></th>
+					<th id="t3"><img id="2" width="277" height="330" src="deck3.png"></th>
+					<th id="t4"><img id="3" width="277" height="330" src="deck4.png"></th>
+				</tr>
+				<tr>
+					<th id="t5"><img id="4" width="277" height="330" src="deck5.png"></th>
+					<th id="t6"><img id="5" width="277" height="330" src="deck6.png"></th>
+					<th id="t7"><img id="6" width="277" height="330" src="deck7.png"></th>
+					<th id="t8"><img id="7" width="277" height="330" src="deck8.png"></th>
+				</tr>	
+			</table><p>
+			<input type="button" value="Shuffle!" onclick="shuffle()">
+		</div>
+</body>
+</html>
