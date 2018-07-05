@@ -28,24 +28,50 @@
             ,'TombstoneCard.png', 'TornadoCard.png', 'ValkyrieCard.png', 'WitchCard.png', 'WizardCard.png', 'X-BowCard.png', 'ZapCard.png', 'ZappiesCard.png'];
 
     
-    
-    function cardmove(picked)
+
+
+ 		function cardmove(picked)
+     	{      
+             //alert("here")
+             //alert(document.getElementById(0).src);
+             if(document.getElementById(0).src == "https://spirithan.github.io/ClashRoyale/deck1.PNG")
+             {
+              document.getElementById(0).src = picked;
+             }
+             else if(document.getElementById(1).src == "https://spirithan.github.io/ClashRoyale/deck2.PNG")
+             {
+              document.getElementById(1).src = picked;
+             }
+             else if(document.getElementById(2).src == "https://spirithan.github.io/ClashRoyale/deck3.PNG")
+             {
+              document.getElementById(2).src = picked;
+             }
+             else if(document.getElementById(3).src == "https://spirithan.github.io/ClashRoyale/deck4.PNG")
+             {
+              document.getElementById(3).src = picked;
+             }
+             else
+             {
+             	alert("You can only pick 4cards");
+             }  
+ 	   }
+    /* function cardmove(picked)
     {      
             //alert("here")
             //alert(document.getElementById(0).src);
-            if(document.getElementById(0).src == "https://spirithan.github.io/ClashRoyale/deck1.PNG")
+            if(document.getElementById(0).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck1.PNG")
             {
              document.getElementById(0).src = picked;
             }
-            else if(document.getElementById(1).src == "https://spirithan.github.io/ClashRoyale/deck2.PNG")
+            else if(document.getElementById(1).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck2.PNG")
             {
              document.getElementById(1).src = picked;
             }
-            else if(document.getElementById(2).src == "https://spirithan.github.io/ClashRoyale/deck3.PNG")
+            else if(document.getElementById(2).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck3.PNG")
             {
              document.getElementById(2).src = picked;
             }
-            else if(document.getElementById(3).src == "https://spirithan.github.io/ClashRoyale/deck4.PNG")
+            else if(document.getElementById(3).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck4.PNG")
             {
              document.getElementById(3).src = picked;
             }
@@ -53,7 +79,7 @@
             {
             	alert("You can only pick 4cards");
             }  
-   }
+   } */
     
    function shuffle()
    {
@@ -87,6 +113,48 @@
       
    }
       
+	   function random1()
+	   {
+		   //alert(" suffle !");
+		      var randomCard = null;
+		      
+		      randomCard = card[Math.floor(Math.random() * card.length)];
+		            
+		      document.getElementById(4).src = randomCard;           
+	   }
+		      
+	   function random2()
+	   {
+
+		   //alert(" suffle !");
+		      var randomCard = null;
+		      
+		      randomCard = card[Math.floor(Math.random() * card.length)];
+		            
+		      document.getElementById(5).src = randomCard;        
+	   }
+	   
+	   function random3()
+	   {
+
+		   //alert(" suffle !");
+		      var randomCard = null;
+		      
+		      randomCard = card[Math.floor(Math.random() * card.length)];
+		            
+		      document.getElementById(6).src = randomCard;        
+	   }
+	   
+	   function random4()
+	   {
+
+		   //alert(" suffle !");
+		      var randomCard = null;
+		      
+		      randomCard = card[Math.floor(Math.random() * card.length)];
+		            
+		      document.getElementById(7).src = randomCard;        
+	   }
    </script>
 
 </head>
@@ -112,10 +180,10 @@
                <th id="t4"><img id="3" width="277" height="330" src="deck4.PNG"></th>
             </tr>
             <tr>
-               <th id="t5"><img id="4" width="277" height="330" src="deck5.PNG"></th>
-               <th id="t6"><img id="5" width="277" height="330" src="deck6.PNG"></th>
-               <th id="t7"><img id="6" width="277" height="330" src="deck7.PNG"></th>
-               <th id="t8"><img id="7" width="277" height="330" src="deck8.PNG"></th>
+               <th id="t5"><img id="4" width="277" height="330" src="deck5.PNG" onclick="random1()"></th>
+               <th id="t6"><img id="5" width="277" height="330" src="deck6.PNG" onclick="random2()"></th>
+               <th id="t7"><img id="6" width="277" height="330" src="deck7.PNG" onclick="random3()"></th>
+               <th id="t8"><img id="7" width="277" height="330" src="deck8.PNG" onclick="random4()"></th>
             </tr>   
          </table><p>
          <input type="button" value="Shuffle!" onclick="shuffle()">
@@ -123,3 +191,6 @@
     </div> 
 </body>
 </html>
+
+
+
