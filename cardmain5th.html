@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Clash Royale Card Shuffle</title>
+   <h1 align="center">Clash Royale Card Shuffle</h1><p>
+
+   
+  
+   
+   <script>
+   
+ var card = ['ArchersCard.png', 'ArrowsCard.png', 'BabyDragonCard.png', 'BalloonCard.png'
+            ,'BanditCard.png', 'BarbarianBarrelCard.png', 'BarbarianHutCard.png', 'BarbariansCard.png'
+            ,'bats.png', 'BattleRamCard.png', 'BomberCard.png', 'BombTowerCard.png', 'BowlerCard.png'
+            ,'CannonCard.png', 'CannonCartCard.png', 'clone.png', 'DarkPrinceCard.png', 'DartGoblinCard.png'
+            ,'ElectroWizardCard.png', 'EliteBarbariansCard.png', 'ElixirCollectorCard.png', 'ExecutionerCard.png'
+            ,'FireballCard.png', 'FireSpiritsCard.png', 'Flugmaschine.png', 'FreezeCard.png', 'FurnaceCard.png', 'GiantCard.png'
+            ,'GiantSkeletonCard.png', 'GiantSnowballCard.png', 'GoblinBarrelCard.png', 'GoblinGangCard.png', 'GoblinHutCard.png'
+            ,'GoblinsCard.png', 'GolemCard.png', 'GraveyardCard.png', 'GuardsCard.png', 'HealCard.png', 'HogRiderCard.png', 'HunterCard.png'
+            ,'IceGolemCard.png', 'IceSpiritCard.png', 'IceWizardCard.png', 'InfernoDragonCard.png', 'InfernoTowerCard.png'
+            ,'knight.png', 'LavaHoundCard.png', 'LightningCard.png', 'LumberjackCard.png', 'MagicArcherCard.png', 'MegaKnightCard.png'
+            ,'MegaMinionCard.png', 'MinerCard.png', 'MinionHordeCard.png', 'Minions.png', 'MiniPEKKACard.png', 'Mirror.png', 'MortarCard.png'
+            ,'MusketeerCard.png', 'NightWitchCard.png', 'PEKKACard.png', 'PoisonCard.png', 'PrinceCard.png', 'PrincessCard.png', 'RageCard.png'
+            ,'RascalsCard.png', 'RocketCard.png', 'RoyalGhostCard.png', 'RoyalGiantCard.png', 'RoyalHogs.png', 'SkeletonArmyCard.png'
+            ,'SkeletonBarrelCard.png', 'SkeletonsCard.png', 'SparkyCard.png', 'SpearGoblinsCard.png', 'TeslaCard.png', 'TheLogCard.png', 'ThreeMusketeersCard.png'
+            ,'TombstoneCard.png', 'TornadoCard.png', 'ValkyrieCard.png', 'WitchCard.png', 'WizardCard.png', 'X-BowCard.png', 'ZapCard.png', 'ZappiesCard.png'];
+
+    
+
+
+/*  		function cardmove(picked)
+     	{      
+             //alert("here")
+             //alert(document.getElementById(0).src);
+             if(document.getElementById(0).src == "https://spirithan.github.io/ClashRoyale/deck1.PNG")
+             {
+              document.getElementById(0).src = picked;
+             }
+             else if(document.getElementById(1).src == "https://spirithan.github.io/ClashRoyale/deck2.PNG")
+             {
+              document.getElementById(1).src = picked;
+             }
+             else if(document.getElementById(2).src == "https://spirithan.github.io/ClashRoyale/deck3.PNG")
+             {
+              document.getElementById(2).src = picked;
+             }
+             else if(document.getElementById(3).src == "https://spirithan.github.io/ClashRoyale/deck4.PNG")
+             {
+              document.getElementById(3).src = picked;
+             }
+             else if(document.getElementById(4).src == "https://spirithan.github.io/ClashRoyale/deck5.PNG")
+             {
+              document.getElementById(4).src = picked;
+             }
+             else
+             {
+             	alert("5장의 카드만 선택할 수 있습니다.");
+             }  
+ 	   } */
+/*      function cardmove(picked)
+    {      
+            alert("here")
+          	alert(document.getElementById(0).src);
+            if(document.getElementById(0).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck1.PNG")
+            {
+             document.getElementById(0).src = picked;
+            }
+            else if(document.getElementById(1).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck2.PNG")
+            {
+             document.getElementById(1).src = picked;
+            }
+            else if(document.getElementById(2).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck3.PNG")
+            {
+             document.getElementById(2).src = picked;
+            }
+            else if(document.getElementById(3).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck4.PNG")
+            {
+             document.getElementById(3).src = picked;
+            }
+            else if(document.getElementById(4).src == "file:///C:/Users/KOITT/workspace/babyWeb/WebContent/Clashcards/deck5.PNG")
+            {
+             document.getElementById(4).src = picked;
+            }
+            else
+            {
+            	alert("5장의 카드만 선택할 수 있습니다.");
+            }  
+   } */ 
+ 	   
+ 	  function cardmove(picked)
+ 	    {      
+// 	            alert("here")
+// 	          	alert(document.getElementById(0).src);
+ 	            if(document.getElementById(0).src == "http://localhost:8088/babyWeb/Clashcards/deck1.PNG")
+ 	            {
+ 	             document.getElementById(0).src = picked;
+ 	            }
+ 	            else if(document.getElementById(1).src == "http://localhost:8088/babyWeb/Clashcards/deck2.PNG")
+ 	            {
+ 	             document.getElementById(1).src = picked;
+ 	            }
+ 	            else if(document.getElementById(2).src == "http://localhost:8088/babyWeb/Clashcards/deck3.PNG")
+ 	            {
+ 	             document.getElementById(2).src = picked;
+ 	            }
+ 	            else if(document.getElementById(3).src == "http://localhost:8088/babyWeb/Clashcards/deck4.PNG")
+ 	            {
+ 	             document.getElementById(3).src = picked;
+ 	            }
+ 	            else if(document.getElementById(4).src == "http://localhost:8088/babyWeb/Clashcards/deck5.PNG")
+	            {
+	             document.getElementById(4).src = picked;
+	            }
+ 	            else
+ 	            {
+ 	            	alert("5장의 카드만 선택할 수 있습니다.");
+ 	            }  
+ 	   }
+    
+   function shuffle()
+   {
+      //alert(" suffle !");
+      var randomCard = new Array();
+      
+      for(i=0; i< card.length; i++){
+         randomCard[i] = card[Math.floor(Math.random() * card.length)];
+         
+            
+         for(j=0; j< i; j++)
+            {
+               
+               if(randomCard[i] == randomCard[j])
+               {
+                  i--;
+               }
+            }
+         //alert(randomCard[i]);
+         
+/*          document.getElementById(0).src = randomCard[0];
+            document.getElementById(1).src = randomCard[1];
+            document.getElementById(2).src = randomCard[2];
+            document.getElementById(3).src = randomCard[3]; 
+            document.getElementById(4).src = randomCard[4]; */
+            document.getElementById(5).src = randomCard[5];
+            document.getElementById(6).src = randomCard[6];
+            document.getElementById(7).src = randomCard[7];
+         
+      }
+      
+   }
+      
+/* 	   function random1()
+	   {
+		   //alert(" suffle !");
+		      var randomCard = null;
+		      
+		      randomCard = card[Math.floor(Math.random() * card.length)];
+		            
+		      document.getElementById(4).src = randomCard;           
+	   } */
+		      
+	   function random2()
+	   {
+
+		   //alert(" suffle !");
+		      var randomCard = null;
+		      
+		      randomCard = card[Math.floor(Math.random() * card.length)];
+		            
+		      document.getElementById(5).src = randomCard;        
+	   }
+	   
+	   function random3()
+	   {
+
+		   //alert(" suffle !");
+		      var randomCard = null;
+		      
+		      randomCard = card[Math.floor(Math.random() * card.length)];
+		            
+		      document.getElementById(6).src = randomCard;        
+	   }
+	   
+	   function random4()
+	   {
+
+		   //alert(" suffle !");
+		      var randomCard = null;
+		      
+		      randomCard = card[Math.floor(Math.random() * card.length)];
+		            
+		      document.getElementById(7).src = randomCard;        
+	   }
+   </script>
+
+</head>
+<body>
+
+   
+     
+     <div id="images">
+
+         <script>
+             for(var n=0; n < card.length; n++)
+    {
+      document.write("<input type='image' src='"+card[n]+" 'width='50px;' height='70px;' onclick='cardmove(card["+n+"])'>");
+      
+    }
+         </script>
+
+     </div>
+      <div align="center" id="maintable">
+         <table width=1100 style="table-layout: fixed">
+            <tr>
+               <th id="t1"><img id="0" width="277" height="330" src="deck1.PNG"></th>
+               <th id="t2"><img id="1" width="277" height="330" src="deck2.PNG"></th>
+               <th id="t3"><img id="2" width="277" height="330" src="deck3.PNG"></th>
+               <th id="t4"><img id="3" width="277" height="330" src="deck4.PNG"></th>
+            </tr>
+            <tr>
+               <th id="t5"><img id="4" width="277" height="330" src="deck5.PNG"></th>
+               <th id="t6"><img id="5" width="277" height="330" src="deck6.PNG" onclick="random2()"></th>
+               <th id="t7"><img id="6" width="277" height="330" src="deck7.PNG" onclick="random3()"></th>
+               <th id="t8"><img id="7" width="277" height="330" src="deck8.PNG" onclick="random4()"></th>
+            </tr>   
+         </table><p>
+         <input type="button" value="Shuffle!" onclick="shuffle()">
+      </div>
+  
+</body>
+</html>
+
+
+
